@@ -1,0 +1,302 @@
+{
+  "_note": "Generated from fintech-new/content by scripts/export-content.mjs. Do not edit here — edit the site's content/ files and re-run.",
+  "_pending": [
+    "events[].date and events[].venue are null — not yet supplied.",
+    "contact.email is the institute's public switchboard, a temporary value.",
+    "faculty[].name spellings are verbatim as supplied and unverified."
+  ],
+  "committee": {
+    "name": "Fintech Committee",
+    "wordmark": {
+      "lead": "FIN",
+      "tail": "tech"
+    },
+    "tagline": "Market theory, run as live events.",
+    "subhead": "A mock IPL auction, a crypto talk, a scam-spotting pitch night. Built by students, for students who'd rather learn finance by breaking it a little.",
+    "description": "The Fintech Committee of Vidyalankar Institute of Technology, Mumbai — market theory run as live events: a mock IPL auction, a crypto talk and a scam-spotting pitch night."
+  },
+  "institute": {
+    "name": "Vidyalankar Institute of Technology",
+    "short": "VIT",
+    "affiliation": "University of Mumbai",
+    "approvals": [
+      "AICTE",
+      "DTE Maharashtra"
+    ],
+    "addressLines": [
+      "Vidyalankar Campus, Vidyalankar College Marg",
+      "Wadala (East), Mumbai — 400 037",
+      "Maharashtra, India"
+    ],
+    "phone": "+91 22 2416 1126"
+  },
+  "contact": {
+    "email": "info@vidyalankarvdt.org",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "faculty": [
+    {
+      "name": "Dr. Nayana Mahajan",
+      "role": "Faculty Convener"
+    },
+    {
+      "name": "Prof. Manoj Suryavanshi",
+      "role": "Faculty Convener"
+    }
+  ],
+  "leadership": [
+    {
+      "initials": "SC",
+      "name": "Sanika Chandankar",
+      "role": "President",
+      "line": "I turn every story into a 20-minute story",
+      "photo": "/members/sanika-chandankar.png"
+    },
+    {
+      "initials": "JS",
+      "name": "Jatin Sharma",
+      "role": "Vice President",
+      "line": "Chole Bhature Pagli",
+      "photo": "/members/jatin-sharma.png"
+    },
+    {
+      "initials": "AR",
+      "name": "Ajinkya Repale",
+      "role": "General Secretary",
+      "line": "Too real for the regular",
+      "photo": "/members/ajinkya-repale.png"
+    }
+  ],
+  "portfolios": [
+    {
+      "name": "Creative",
+      "members": [
+        {
+          "initials": "SL",
+          "name": "Shashwat Labhane",
+          "line": "Happiness is simple, we complicate it",
+          "photo": "/members/shashwat-labhane.png"
+        }
+      ]
+    },
+    {
+      "name": "PR & Operations",
+      "members": [
+        {
+          "initials": "AJ",
+          "name": "Athila Jain",
+          "line": "Your fav Himesh Reshammiya enthusiast",
+          "photo": "/members/athila-jain.png"
+        },
+        {
+          "initials": "VP",
+          "name": "Vedant Parab",
+          "line": "Subterranean homesick alien & a paranoid android",
+          "photo": "/members/vedant-parab.png"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "members": [
+        {
+          "initials": "EK",
+          "name": "Eshna Kumar",
+          "line": "Larp less, Live more",
+          "photo": "/members/eshna-kumar.png"
+        },
+        {
+          "initials": "AV",
+          "name": "Arnav Vartak",
+          "line": "Still Ballin",
+          "photo": "/members/arnav-vartak.png"
+        }
+      ]
+    },
+    {
+      "name": "Photography",
+      "members": [
+        {
+          "initials": "KS",
+          "name": "Kunal Sawant",
+          "line": "I did not choose the role. The role chose me.",
+          "photo": "/members/kunal-sawant.png"
+        }
+      ]
+    },
+    {
+      "name": "Technical",
+      "members": [
+        {
+          "initials": "AS",
+          "name": "Arpit Singh",
+          "line": "Mr. Overcomplicate it",
+          "photo": "/members/arpit-singh.png"
+        }
+      ]
+    },
+    {
+      "name": "Sponsorships",
+      "members": [
+        {
+          "initials": "SK",
+          "name": "Shravan Khedekar",
+          "line": "Driven by curiosity. Fueled by ambition.",
+          "photo": "/members/shravan-khedekar.png"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "index": "01",
+      "slug": "bidblaze",
+      "title": "Bidblaze 2026",
+      "kicker": "Mock IPL auction",
+      "blurb": "A mock IPL auction with a fintech valuation twist — thirteen teams bid real strategy for fictional stakes.",
+      "outcome": "Punjab Kings edged Mumbai Indians, 576 to 569.",
+      "metrics": [
+        {
+          "label": "Attendees",
+          "value": "45"
+        },
+        {
+          "label": "Teams",
+          "value": "13"
+        },
+        {
+          "label": "Top bid",
+          "value": "29 cr.",
+          "detail": "Kohli"
+        }
+      ],
+      "photo": "/events/bidblaze.png",
+      "date": null,
+      "venue": null
+    },
+    {
+      "index": "02",
+      "slug": "bitcoin-india-tour",
+      "title": "Bitcoin India Tour",
+      "kicker": "Talk",
+      "blurb": "Amol Bajpai on crypto, blockchain and DeFi — our biggest turnout of the year.",
+      "outcome": null,
+      "metrics": [
+        {
+          "label": "Attendees",
+          "value": "80"
+        }
+      ],
+      "photo": "/events/bitcoin-india-tour.png",
+      "date": null,
+      "venue": null
+    },
+    {
+      "index": "03",
+      "slug": "scam-tank",
+      "title": "Scam Tank",
+      "kicker": "Pitch night",
+      "blurb": "A Shark-Tank-style pitch night exposing real scam tactics, judged by Hardik Bhatia.",
+      "outcome": "PatchPlus took first.",
+      "metrics": [
+        {
+          "label": "Attendees",
+          "value": "45"
+        },
+        {
+          "label": "Teams",
+          "value": "3"
+        }
+      ],
+      "photo": "/events/scam-tank.png",
+      "date": null,
+      "venue": null
+    }
+  ],
+  "formats": [
+    {
+      "index": "01",
+      "name": "The auction",
+      "body": "A mock IPL auction with a fintech valuation twist. Teams bid real strategy for fictional stakes, and the room finds out who can price a player nobody else wants.",
+      "from": "Bidblaze 2026"
+    },
+    {
+      "index": "02",
+      "name": "The talk",
+      "body": "Someone who actually works in the space comes and talks about it. Our biggest turnout yet was a room of eighty listening to Amol Bajpai on crypto, blockchain and DeFi.",
+      "from": "Bitcoin India Tour"
+    },
+    {
+      "index": "03",
+      "name": "The pitch",
+      "body": "A Shark-Tank-style night where teams pitch and get taken apart in public. Judged on whether the pitch survives contact with someone who knows the scams.",
+      "from": "Scam Tank"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a finance background?",
+      "a": "No. Curiosity and a willingness to argue about IPL auctions is preferred. The committee is built for students who'd rather learn finance by breaking it a little."
+    },
+    {
+      "q": "What actually happens at a session?",
+      "a": "One of three formats: a mock auction with a fintech valuation twist, a talk from someone who works in the space, or a pitch night where teams get taken apart in public. Whichever it is, you will be asked an opinion."
+    },
+    {
+      "q": "Who is behind it?",
+      "a": "Eleven students across leadership and six portfolios, under the guidance of our faculty conveners."
+    },
+    {
+      "q": "Where does it happen?",
+      "a": "On campus at Vidyalankar Institute of Technology, Wadala (East), Mumbai."
+    }
+  ],
+  "manifesto": [
+    "Market theory, run as live events",
+    "No finance background required",
+    "Curiosity and a willingness to argue about IPL auctions preferred",
+    "Eleven ways of overcomplicating a spreadsheet"
+  ],
+  "headings": {
+    "mission": {
+      "label": "01 — Mission",
+      "lines": [
+        "We turn abstract fintech ideas into rooms full of people",
+        "arguing about IPL bids and {Bitcoin} — because that's how the concepts actually stick."
+      ],
+      "note": "Three in leadership, eight running the portfolios between them."
+    },
+    "formats": {
+      "label": "How a session runs",
+      "lines": [
+        "Three ways to learn finance by {breaking it} a little."
+      ]
+    },
+    "record": {
+      "label": "02 — The Record",
+      "lines": [
+        "Three events, one season,",
+        "{a fair amount of chaos.}"
+      ]
+    },
+    "committee": {
+      "label": "03 — Committee",
+      "lines": [
+        "Eleven people, eleven ways of {overcomplicating a spreadsheet.}"
+      ],
+      "note": "Three in leadership, eight running the portfolios between them."
+    },
+    "join": {
+      "label": "04 — Join",
+      "lines": [
+        "No finance background required.",
+        "Curiosity and a willingness to argue about {IPL auctions} preferred."
+      ]
+    }
+  },
+  "derived": {
+    "memberCount": 11,
+    "totalAttendees": 170
+  }
+}

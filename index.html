@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fintech Committee — Market theory, run as live events | VIT Mumbai</title>
+<meta name="description" content="The Fintech Committee of Vidyalankar Institute of Technology, Mumbai — market theory run as live events: a mock IPL auction, a crypto talk and a scam-spotting pitch night." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2308090C'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%23C6FF4A'>F%</text></svg>" />
+</head>
+<body data-loading="true">
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-mark"><span>FIN</span><em>tech</em></div>
+    <div class="pre-row">
+      <span class="pre-label">LOADING MARKET DATA</span>
+      <span class="pre-pct" id="prePct">000</span>
+    </div>
+    <div class="pre-bar"><i id="preBarFill"></i></div>
+    <div class="pre-ticks"><span>VIT · MUMBAI</span><span>EST. CHAOS / 2026</span></div>
+  </div>
+  <div class="pre-curtain"></div>
+</div>
+
+<!-- ambient layers -->
+<div class="noise" aria-hidden="true"></div>
+<div id="progress" aria-hidden="true"><i></i></div>
+<div id="cursorDot" aria-hidden="true"></div>
+<div id="cursorRing" aria-hidden="true"><span>VIEW</span></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header id="nav">
+  <a class="brand" href="#top" data-magnet>
+    <span class="brand-box">F%</span>
+    <span class="brand-word">FIN<em>tech</em></span>
+    <span class="brand-sub">VIT · MUMBAI</span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#mission" data-link><i>01</i>Mission</a>
+    <a href="#record" data-link><i>02</i>Record</a>
+    <a href="#committee" data-link><i>03</i>Committee</a>
+    <a href="#join" data-link><i>04</i>Join</a>
+  </nav>
+  <div class="nav-right">
+    <span class="nav-clock"><span class="live-dot"></span><span id="clock">MUMBAI --:--:--</span></span>
+    <a href="#join" class="btn btn-lime btn-sm" data-magnet><span>Join the pit</span><svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 17L17 7M17 7H8M17 7v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div id="mobileMenu" aria-hidden="true">
+  <div class="mm-ticker">MARKET THEORY · RUN AS LIVE EVENTS ·</div>
+  <nav>
+    <a href="#mission"><i>01</i><span>Mission</span></a>
+    <a href="#record"><i>02</i><span>Record</span></a>
+    <a href="#committee"><i>03</i><span>Committee</span></a>
+    <a href="#join"><i>04</i><span>Join</span></a>
+  </nav>
+  <div class="mm-foot">
+    <p>Vidyalankar Institute of Technology<br>Wadala (East), Mumbai — 400 037</p>
+    <p class="mono">11 PEOPLE · 3 EVENTS · 170 ATTENDEES</p>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
+    <canvas id="chart" aria-hidden="true"></canvas>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-fade" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-meta mono reveal">
+        <span class="pill"><span class="live-dot"></span> LIVE — SEASON 2026</span>
+        <span class="hide-m">VIDYALANKAR INSTITUTE OF TECHNOLOGY</span>
+        <span class="hide-m">WADALA · MUMBAI · 19.02°N</span>
+      </div>
+
+      <h1 class="hero-title" aria-label="Market theory, run as live events.">
+        <span class="ht-line" data-split>Market theory,</span>
+        <span class="ht-line" data-split>run as <em>live</em> <span class="outline">events.</span></span>
+      </h1>
+
+      <div class="hero-sub">
+        <p class="hero-desc reveal">A mock IPL auction, a crypto talk, a scam-spotting pitch night. Built by students, for students who'd rather learn finance by <strong>breaking it a little.</strong></p>
+        <div class="hero-ctas reveal">
+          <a href="#record" class="btn btn-lime" data-magnet><span>See the record</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 5v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#committee" class="btn btn-ghost" data-magnet><span>Meet the 11</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17L17 7M17 7H8M17 7v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="hstat"><span class="hstat-num" data-count="11" data-pad="2">00</span><span class="hstat-label">People<br>on committee</span></div>
+        <div class="hstat"><span class="hstat-num" data-count="3" data-pad="2">00</span><span class="hstat-label">Events<br>one season</span></div>
+        <div class="hstat"><span class="hstat-num" data-count="170">0</span><span class="hstat-label">Total<br>attendees</span></div>
+        <div class="hstat hstat-live">
+          <span class="hstat-num mono" id="heroIndex">4,208<span class="up">▲</span></span>
+          <span class="hstat-label">FIN/CHAOS index <i id="heroIndexDelta">+1.8% today</i></span>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-hint mono" href="#mission"><span>SCROLL</span><i></i></a>
+  </section>
+
+  <!-- ══════════ MANIFESTO MARQUEE ══════════ -->
+  <div class="marquee marquee-lime" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Market theory, run as live events</span><b>✦</b><span class="o">No finance background required</span><b>✦</b><span>Curiosity + a willingness to argue about IPL auctions preferred</span><b>✦</b><span class="o">Eleven ways of overcomplicating a spreadsheet</span><b>✦</b>
+      <span>Market theory, run as live events</span><b>✦</b><span class="o">No finance background required</span><b>✦</b><span>Curiosity + a willingness to argue about IPL auctions preferred</span><b>✦</b><span class="o">Eleven ways of overcomplicating a spreadsheet</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- ══════════ 01 MISSION ══════════ -->
+  <section id="mission" class="section mission">
+    <div class="wrap">
+      <p class="sec-label mono reveal"><span>01 — MISSION</span><span class="rule"></span><span class="hide-m">WHY WE EXIST</span></p>
+      <h2 class="big-statement" id="missionStatement">
+        <span class="bs-line">We turn abstract fintech ideas into rooms full of people</span>
+        <span class="bs-line">arguing about IPL bids and <em>Bitcoin</em> — because that's</span>
+        <span class="bs-line">how the concepts actually <em>stick.</em></span>
+      </h2>
+      <div class="mission-grid">
+        <p class="mission-note mono reveal">Three in leadership, eight running the portfolios between them. Two faculty conveners keeping us (mostly) legal.</p>
+        <div class="mission-cards">
+          <article class="mcard reveal" data-tilt>
+            <span class="mono mcard-i">/ 01</span>
+            <h3>Learn by doing</h3>
+            <p>No lectures about liquidity. You price a player nobody else wants, you defend a pitch in public, you ask the crypto guy the rude question.</p>
+          </article>
+          <article class="mcard reveal" data-tilt>
+            <span class="mono mcard-i">/ 02</span>
+            <h3>Built for outsiders</h3>
+            <p>Zero finance background required. If you can argue about an IPL auction for twenty minutes, you already belong here.</p>
+          </article>
+          <article class="mcard reveal" data-tilt>
+            <span class="mono mcard-i">/ 03</span>
+            <h3>Run like a desk</h3>
+            <p>Creative, PR &amp; Ops, Events, Photography, Technical, Sponsorships — six portfolios operating one live floor.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 02 THE RECORD ══════════ -->
+  <section id="record" class="section record">
+    <div class="wrap">
+      <p class="sec-label mono reveal"><span>02 — THE RECORD</span><span class="rule"></span><span class="hide-m"> receipts, not promises</span></p>
+      <h2 class="sec-title reveal">Three events, one season, <em>a fair amount of chaos.</em></h2>
+
+      <div class="events">
+        <!-- BIDBLAZE -->
+        <article class="event reveal" data-event>
+          <div class="event-media" data-cursor="BID">
+            <div class="event-index mono">01</div>
+            <div class="event-art art-auction" aria-hidden="true">
+              <div class="art-paddle p1">PBKS<br><b>576</b></div>
+              <div class="art-hammer">🔨</div>
+              <div class="art-paddle p2">MI<br><b>569</b></div>
+              <div class="art-bid mono" id="liveBid">LIVE BID — ₹29.00 CR · KOHLI</div>
+            </div>
+            <div class="event-tags mono"><span>MOCK IPL AUCTION</span><span class="dot"></span><span>FLAGSHIP</span></div>
+          </div>
+          <div class="event-body">
+            <p class="mono event-kicker">01 · MOCK IPL AUCTION — TBC · TBC</p>
+            <h3>Bidblaze <span>2026</span></h3>
+            <p class="event-blurb">A mock IPL auction with a fintech valuation twist — thirteen teams bid real strategy for fictional stakes.</p>
+            <p class="event-outcome"><span class="mono">OUTCOME</span> Punjab Kings edged Mumbai Indians, 576 to 569.</p>
+            <div class="metrics">
+              <div class="metric"><strong><span data-count="45">0</span></strong><span class="mono">ATTENDEES</span></div>
+              <div class="metric"><strong><span data-count="13">0</span></strong><span class="mono">TEAMS</span></div>
+              <div class="metric"><strong><span data-count="29">0</span> cr.</strong><span class="mono">TOP BID · KOHLI</span></div>
+            </div>
+            <div class="bid-sim">
+              <div class="bid-sim-head mono"><span>● SIMULATED FLOOR</span><span id="bidSimPrice">₹14.20 CR</span></div>
+              <div class="bid-sim-bar"><i id="bidSimFill"></i></div>
+              <button class="btn btn-ghost btn-sm bid-btn" data-magnet><span>Drive the bid up</span><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 19V5m0 0l-6 6m6-6l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- BITCOIN TOUR -->
+        <article class="event flip reveal" data-event>
+          <div class="event-media" data-cursor="BTC">
+            <div class="event-index mono">02</div>
+            <div class="event-art art-btc" aria-hidden="true">
+              <div class="btc-coin">₿</div>
+              <div class="btc-orbit o1"></div><div class="btc-orbit o2"></div>
+              <div class="btc-ticker mono"><span>BTC/INR ▲ 2.4%</span><span>DEFI ● LIVE</span></div>
+            </div>
+            <div class="event-tags mono"><span>TALK</span><span class="dot"></span><span>BIGGEST TURNOUT</span></div>
+          </div>
+          <div class="event-body">
+            <p class="mono event-kicker">02 · TALK — TBC · TBC</p>
+            <h3>Bitcoin India <span>Tour</span></h3>
+            <p class="event-blurb">Amol Bajpai on crypto, blockchain and DeFi — our biggest turnout of the year. Eighty heads, one very honest Q&amp;A.</p>
+            <p class="event-outcome"><span class="mono">GUEST</span> Amol Bajpai — crypto, blockchain &amp; DeFi, no hype allowed.</p>
+            <div class="metrics">
+              <div class="metric"><strong><span data-count="80">0</span></strong><span class="mono">ATTENDEES</span></div>
+              <div class="metric"><strong>×<span data-count="1" data-decimals="1">0</span></strong><span class="mono">HOUSE FULL</span></div>
+              <div class="metric"><strong>100<span>%</span></strong><span class="mono">NO-HYPE Q&amp;A</span></div>
+            </div>
+            <blockquote class="pull">“The room went silent when someone asked where the yield actually comes from.” <cite class="mono">— FLOOR NOTES</cite></blockquote>
+          </div>
+        </article>
+
+        <!-- SCAM TANK -->
+        <article class="event reveal" data-event>
+          <div class="event-media" data-cursor="TANK">
+            <div class="event-index mono">03</div>
+            <div class="event-art art-tank" aria-hidden="true">
+              <div class="tank-card t1">“GUARANTEED<br>40% RETURNS”<s>SCAM</s></div>
+              <div class="tank-card t2">PATCHPLUS<br><b>WINNER ✓</b></div>
+              <div class="tank-x">✕</div>
+            </div>
+            <div class="event-tags mono"><span>PITCH NIGHT</span><span class="dot"></span><span>JUDGED LIVE</span></div>
+          </div>
+          <div class="event-body">
+            <p class="mono event-kicker">03 · PITCH NIGHT — TBC · TBC</p>
+            <h3>Scam <span>Tank</span></h3>
+            <p class="event-blurb">A Shark-Tank-style pitch night exposing real scam tactics, judged by Hardik Bhatia. Three teams walked in. One survived.</p>
+            <p class="event-outcome"><span class="mono">OUTCOME</span> PatchPlus took first.</p>
+            <div class="metrics">
+              <div class="metric"><strong><span data-count="45">0</span></strong><span class="mono">ATTENDEES</span></div>
+              <div class="metric"><strong><span data-count="3">0</span></strong><span class="mono">TEAMS</span></div>
+              <div class="metric"><strong>1<span>st</span></strong><span class="mono">PATCHPLUS</span></div>
+            </div>
+            <blockquote class="pull">“If the pitch survives Hardik, it survives the internet.” <cite class="mono">— JUDGE'S TABLE</cite></blockquote>
+          </div>
+        </article>
+      </div>
+
+      <!-- totals band -->
+      <div class="totals reveal">
+        <div class="total"><strong><span data-count="170">0</span></strong><span class="mono">TOTAL ATTENDEES</span></div>
+        <div class="total"><strong><span data-count="19">0</span></strong><span class="mono">TEAMS ON FLOOR</span></div>
+        <div class="total"><strong><span data-count="3">0</span></strong><span class="mono">FORMATS SHIPPED</span></div>
+        <div class="total"><strong class="lime">TBC</strong><span class="mono">NEXT DATE — WATCH THIS SPACE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 03 COMMITTEE ══════════ -->
+  <section id="committee" class="section committee">
+    <div class="wrap">
+      <p class="sec-label mono reveal"><span>03 — COMMITTEE</span><span class="rule"></span><span class="hide-m">THE ELEVEN</span></p>
+      <h2 class="sec-title reveal">Eleven people, eleven ways of <em>overcomplicating a spreadsheet.</em></h2>
+      <p class="committee-note mono reveal">THREE IN LEADERSHIP, EIGHT RUNNING THE PORTFOLIOS BETWEEN THEM. — HOVER TO READ THE FINE PRINT.</p>
+
+      <h3 class="subhead mono reveal"><span>LEADERSHIP</span><span class="rule"></span><span>03</span></h3>
+      <div class="leaders">
+        <article class="person lead reveal" data-tilt data-cursor="PREZ">
+          <div class="person-photo ph-lime"><img src="photos/members/sanika-chandankar.png" alt="Sanika Chandankar" loading="lazy"><span class="person-initials mono">SC</span></div>
+          <div class="person-info"><p class="mono person-role">PRESIDENT</p><h4>Sanika Chandankar</h4><p class="person-line">“I turn every story into a 20-minute story”</p></div>
+        </article>
+        <article class="person lead reveal" data-tilt data-cursor="VP">
+          <div class="person-photo ph-violet"><img src="photos/members/jatin-sharma.png" alt="Jatin Sharma" loading="lazy"><span class="person-initials mono">JS</span></div>
+          <div class="person-info"><p class="mono person-role">VICE PRESIDENT</p><h4>Jatin Sharma</h4><p class="person-line">“Chole Bhature Pagli”</p></div>
+        </article>
+        <article class="person lead reveal" data-tilt data-cursor="SEC">
+          <div class="person-photo ph-amber"><img src="photos/members/ajinkya-repale.png" alt="Ajinkya Repale" loading="lazy"><span class="person-initials mono">AR</span></div>
+          <div class="person-info"><p class="mono person-role">GENERAL SECRETARY</p><h4>Ajinkya Repale</h4><p class="person-line">“Too real for the regular”</p></div>
+        </article>
+      </div>
+
+      <div class="portfolio-filter mono reveal" role="tablist" aria-label="Filter portfolios">
+        <button class="pf active" data-filter="all">ALL · 08</button>
+        <button class="pf" data-filter="Creative">CREATIVE</button>
+        <button class="pf" data-filter="PR & Operations">PR &amp; OPS</button>
+        <button class="pf" data-filter="Events">EVENTS</button>
+        <button class="pf" data-filter="Photo">PHOTO</button>
+        <button class="pf" data-filter="Technical">TECH</button>
+        <button class="pf" data-filter="Sponsorships">SPONSORS</button>
+      </div>
+
+      <div class="portfolios" id="portfolioGrid">
+        <article class="person reveal" data-tilt data-portfolio="Creative" data-cursor="SL">
+          <div class="person-photo ph-paper"><img src="photos/members/shashwat-labhane.png" alt="Shashwat Labhane" loading="lazy"><span class="person-initials mono">SL</span></div>
+          <div class="person-info"><p class="mono person-role">CREATIVE</p><h4>Shashwat Labhane</h4><p class="person-line">“Happiness is simple, we complicate it”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="PR & Operations" data-cursor="AJ">
+          <div class="person-photo ph-lime"><img src="photos/members/athila-jain.png" alt="Athila Jain" loading="lazy"><span class="person-initials mono">AJ</span></div>
+          <div class="person-info"><p class="mono person-role">PR &amp; OPERATIONS</p><h4>Athila Jain</h4><p class="person-line">“Your fav Himesh Reshammiya enthusiast”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="PR & Operations" data-cursor="VP">
+          <div class="person-photo ph-violet"><img src="photos/members/vedant-parab.png" alt="Vedant Parab" loading="lazy"><span class="person-initials mono">VP</span></div>
+          <div class="person-info"><p class="mono person-role">PR &amp; OPERATIONS</p><h4>Vedant Parab</h4><p class="person-line">“Subterranean homesick alien &amp; a paranoid android”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="Events" data-cursor="EK">
+          <div class="person-photo ph-amber"><img src="photos/members/eshna-kumar.png" alt="Eshna Kumar" loading="lazy"><span class="person-initials mono">EK</span></div>
+          <div class="person-info"><p class="mono person-role">EVENTS</p><h4>Eshna Kumar</h4><p class="person-line">“Larp less, Live more”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="Events" data-cursor="AV">
+          <div class="person-photo ph-paper"><img src="photos/members/arnav-vartak.png" alt="Arnav Vartak" loading="lazy"><span class="person-initials mono">AV</span></div>
+          <div class="person-info"><p class="mono person-role">EVENTS</p><h4>Arnav Vartak</h4><p class="person-line">“Still Ballin”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="Photo" data-cursor="KS">
+          <div class="person-photo ph-lime"><img src="photos/members/kunal-sawant.png" alt="Kunal Sawant" loading="lazy"><span class="person-initials mono">KS</span></div>
+          <div class="person-info"><p class="mono person-role">PHOTOGRAPHY</p><h4>Kunal Sawant</h4><p class="person-line">“I did not choose the role. The role chose me.”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="Technical" data-cursor="AS">
+          <div class="person-photo ph-violet"><img src="photos/members/arpit-singh.png" alt="Arpit Singh" loading="lazy"><span class="person-initials mono">AS</span></div>
+          <div class="person-info"><p class="mono person-role">TECHNICAL</p><h4>Arpit Singh</h4><p class="person-line">“Mr. Overcomplicate it”</p></div>
+        </article>
+        <article class="person reveal" data-tilt data-portfolio="Sponsorships" data-cursor="SK">
+          <div class="person-photo ph-amber"><img src="photos/members/shravan-khedekar.png" alt="Shravan Khedekar" loading="lazy"><span class="person-initials mono">SK</span></div>
+          <div class="person-info"><p class="mono person-role">SPONSORSHIPS</p><h4>Shravan Khedekar</h4><p class="person-line">“Driven by curiosity. Fueled by ambition.”</p></div>
+        </article>
+      </div>
+
+      <!-- faculty strip -->
+      <div class="faculty reveal">
+        <div class="faculty-head mono"><span>FACULTY CONVENERS</span><span class="rule"></span><span>GUIDANCE COUNCIL</span></div>
+        <div class="faculty-grid">
+          <div class="fac"><span class="fac-avatar mono">NM</span><div><strong>Dr. Nayana Mahajan</strong><span class="mono">FACULTY CONVENER</span></div></div>
+          <div class="fac"><span class="fac-avatar mono">MS</span><div><strong>Prof. Manoj Suryavanshi</strong><span class="mono">FACULTY CONVENER</span></div></div>
+          <div class="fac inst"><span class="fac-avatar mono">VIT</span><div><strong>Vidyalankar Institute of Technology</strong><span class="mono">UNIVERSITY OF MUMBAI · AICTE · DTE MAHARASHTRA</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 004 — FLOOR PHILOSOPHY (one line, drifting) ══════════ -->
+  <section class="drift" id="philosophy" aria-label="Floor philosophy">
+    <div class="drift-pin">
+      <span class="drift-giant" aria-hidden="true">004</span>
+      <p class="mono drift-label"><span class="live-dot"></span> FLOOR PHILOSOPHY — 004</p>
+      <div class="drift-lines" aria-label="You don't learn markets from slides. You learn them when your bid gets laughed at.">
+        <div class="drift-row"><p class="drift-track" id="driftA">You don't learn markets from <em>slides.</em></p></div>
+        <div class="drift-row"><p class="drift-track outline" id="driftB">you learn them when <em>your bid</em> gets laughed at.</p></div>
+      </div>
+      <p class="mono drift-attr">— OVERHEARD AT BIDBLAZE ’26, PROBABLY</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 04 JOIN + FAQ ══════════ -->
+  <section id="join" class="section join">
+    <div class="wrap">
+      <p class="sec-label mono reveal"><span>04 — JOIN</span><span class="rule"></span><span class="hide-m">NO SUIT REQUIRED</span></p>
+      <h2 class="sec-title reveal">No finance background required. Curiosity and a willingness to argue about <em>IPL auctions</em> preferred.</h2>
+
+      <div class="join-grid">
+        <div class="join-card reveal" data-tilt>
+          <p class="mono join-card-kicker">● RECRUITMENT — OPEN</p>
+          <h3>Get on the floor.</h3>
+          <p>One season. Three formats. Eleven loud opinions. Leave your roll number and the hottest (worst) financial take you own — we'll bring the auction paddle.</p>
+          <form id="joinForm" novalidate>
+            <label>NAME<input type="text" name="name" placeholder="e.g. Future Bidblaze Villain" required autocomplete="name"></label>
+            <label>EMAIL<input type="email" name="email" placeholder="you@vit.edu" required autocomplete="email"></label>
+            <label>YOUR WORST FINANCIAL TAKE<textarea name="take" rows="3" placeholder="e.g. Kohli at 29cr was honestly a steal…"></textarea></label>
+            <div class="join-row">
+              <div class="pf-select mono" id="pfSelect" aria-label="Preferred portfolio">
+                <button type="button" class="pf active" data-value="Events">EVENTS</button>
+                <button type="button" class="pf" data-value="Creative">CREATIVE</button>
+                <button type="button" class="pf" data-value="Tech">TECH</button>
+              </div>
+              <button type="submit" class="btn btn-lime" data-magnet><span>Claim a paddle</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M7 17L17 7M17 7H8M17 7v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+            <p class="mono form-note" id="formNote">WE REPLY FROM CAMPUS. USUALLY WITHIN A WEEK, ALWAYS WITH OPINIONS.</p>
+          </form>
+        </div>
+
+        <div class="faqs reveal">
+          <div class="faq open" data-faq>
+            <button class="faq-q" aria-expanded="true"><span>Do I need a finance background?</span><i>+</i></button>
+            <div class="faq-a"><p>No. Curiosity and a willingness to argue about IPL auctions is preferred. The committee is built for students who'd rather learn finance by breaking it a little.</p></div>
+          </div>
+          <div class="faq" data-faq>
+            <button class="faq-q" aria-expanded="false"><span>What actually happens at a session?</span><i>+</i></button>
+            <div class="faq-a"><p>One of three formats: a mock auction with a fintech valuation twist, a talk from someone who works in the space, or a pitch night where teams get taken apart in public. Whichever it is, you will be asked an opinion.</p></div>
+          </div>
+          <div class="faq" data-faq>
+            <button class="faq-q" aria-expanded="false"><span>Who is behind it?</span><i>+</i></button>
+            <div class="faq-a"><p>Eleven students across leadership and six portfolios, under the guidance of our faculty conveners — Dr. Nayana Mahajan and Prof. Manoj Suryavanshi.</p></div>
+          </div>
+          <div class="faq" data-faq>
+            <button class="faq-q" aria-expanded="false"><span>Where does it happen?</span><i>+</i></button>
+            <div class="faq-a"><p>On campus at Vidyalankar Institute of Technology, Wadala (East), Mumbai — 400 037. Watch the notice boards and this page for the next TBC to turn into a date.</p></div>
+          </div>
+          <div class="faq-contact mono">
+            <span>STILL CURIOUS?</span><a href="mailto:info@vidyalankarvdt.org">INFO@VIDYALANKARVDT.ORG ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="foot-top mono reveal">
+        <span><span class="live-dot"></span> FLOOR STATUS: HUNGRY FOR SEASON 02</span>
+        <span class="hide-m" id="footClock">MUMBAI --:--:-- IST</span>
+        <a href="#top" data-magnet>BACK TO TOP ↑</a>
+      </div>
+      <div class="foot-word" aria-hidden="true"><span data-split>FIN<em>tech</em></span></div>
+      <div class="foot-grid">
+        <div><p class="mono foot-h">VISIT</p><p>Vidyalankar Campus,<br>Vidyalankar College Marg,<br>Wadala (East), Mumbai — 400 037<br>Maharashtra, India</p></div>
+        <div><p class="mono foot-h">TALK</p><p><a href="mailto:info@vidyalankarvdt.org">info@vidyalankarvdt.org</a><br><a href="tel:+912224161126">+91 22 2416 1126</a><br><span class="dim">Instagram / LinkedIn — via campus boards</span></p></div>
+        <div><p class="mono foot-h">INDEX</p><p class="foot-links"><a href="#mission">Mission</a><a href="#record">Record</a><a href="#committee">Committee</a><a href="#join">Join</a></p></div>
+        <div><p class="mono foot-h">COLOPHON</p><p>Set in Space Grotesk, Instrument Serif &amp; JetBrains Mono. Cut-outs by the Photography portfolio. No spreadsheets were harmed — only overcomplicated.</p></div>
+      </div>
+      <div class="foot-base mono">
+        <span>© 2026 FINTECH COMMITTEE · VIT MUMBAI</span>
+        <span class="hide-m">MARKET THEORY, RUN AS LIVE EVENTS</span>
+        <span>MADE WITH CHAOS ON CAMPUS</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div id="toast" class="mono" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
