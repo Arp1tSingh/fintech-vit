@@ -39,24 +39,33 @@
   }
   // hero lines contain nested markup — split per text node instead
   function splitRich(el) {
+    // chars grouped into per-word wrappers so lines only ever break
+    // BETWEEN words — never mid-word on narrow screens
+    const addWord = (parent, word) => {
+      const w = document.createElement("span");
+      w.className = "ww";
+      [...word].forEach((c) => {
+        const s = document.createElement("span");
+        s.className = "ch";
+        s.textContent = c;
+        w.appendChild(s);
+      });
+      parent.appendChild(w);
+    };
+    const addText = (parent, text) => {
+      text.split(/(\s+)/).forEach((part) => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) parent.appendChild(document.createTextNode(" "));
+        else addWord(parent, part);
+      });
+    };
     const nodes = [...el.childNodes];
     el.innerHTML = "";
     nodes.forEach((n) => {
-      if (n.nodeType === 3) {
-        [...n.textContent].forEach((c) => {
-          const s = document.createElement("span");
-          s.className = "ch";
-          s.innerHTML = c === " " ? "&nbsp;" : (c === "<" ? "&lt;" : c);
-          el.appendChild(s);
-        });
-      } else if (n.nodeType === 1) {
+      if (n.nodeType === 3) addText(el, n.textContent);
+      else if (n.nodeType === 1) {
         const clone = n.cloneNode(false);
-        [...n.textContent].forEach((c) => {
-          const s = document.createElement("span");
-          s.className = "ch";
-          s.innerHTML = c === " " ? "&nbsp;" : c;
-          clone.appendChild(s);
-        });
+        addText(clone, n.textContent);
         el.appendChild(clone);
       }
     });
@@ -73,9 +82,11 @@
         const wrap = n.nodeType === 1 && n.tagName === "EM" ? "em" : null;
         txt.split(/(\s+)/).forEach((part) => {
           if (!part) return;
+          // plain space text-node: keeps a real break opportunity so the
+          // statement wraps cleanly on phones (&nbsp; would lock each line)
+          if (/^\s+$/.test(part)) { line.appendChild(document.createTextNode(" ")); return; }
           const w = document.createElement("span");
           w.className = "w";
-          if (/^\s+$/.test(part)) { w.innerHTML = "&nbsp;"; line.appendChild(w); return; }
           if (wrap) { const e = document.createElement("em"); e.textContent = part; w.appendChild(e); }
           else w.textContent = part;
           line.appendChild(w);

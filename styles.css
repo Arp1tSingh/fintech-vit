@@ -157,6 +157,7 @@ em{font-family:var(--font-s);font-style:italic;font-weight:400}
   font-size:clamp(3rem,9.5vw,8.6rem);margin:26px 0 8px;text-wrap:balance}
 .ht-line{display:block;overflow:hidden}
 .ht-line .ch{display:inline-block;will-change:transform}
+.ww{display:inline-block;white-space:nowrap} /* char-split word glue: wrap between words only */
 .hero-title em{color:var(--lime)}
 .hero-title .outline{color:transparent;-webkit-text-stroke:1.5px var(--txt-d)}
 .hero-sub{display:flex;gap:36px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-top:22px}
@@ -449,6 +450,7 @@ em{font-family:var(--font-s);font-style:italic;font-weight:400}
 @media(max-width:600px){
   .hide-m{display:none}
   .brand-sub{display:none}
+  .brand-word{font-size:1.05rem}
   .portfolios{grid-template-columns:repeat(2,1fr)}
   .metrics{grid-template-columns:repeat(3,1fr)}
   .metric strong{font-size:1.25rem}
@@ -456,6 +458,16 @@ em{font-family:var(--font-s);font-style:italic;font-weight:400}
   .hero-sub{flex-direction:column;align-items:stretch}
   .art-paddle{padding:18px 20px}.art-paddle b{font-size:1.8rem}
   .tank-card{padding:20px;font-size:1rem}
+  /* phone type that always fits: whole words, no mid-word splits, no overflow */
+  .hero-title{font-size:clamp(2.4rem,12.5vw,3.6rem)}
+  .sec-title{font-size:clamp(1.65rem,8.5vw,2.3rem)}
+  .big-statement{font-size:clamp(1.45rem,7.4vw,2rem)}
+  .event-body h3{font-size:clamp(1.8rem,9vw,2.4rem)}
+  .person-line{overflow-wrap:break-word}
+  .faq-contact a,.foot-grid a[href^="mailto:"]{overflow-wrap:anywhere}
+  .hstat{padding:16px}
+  .hstat-num{font-size:1.5rem}
+  .join-row .btn{width:100%;justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
